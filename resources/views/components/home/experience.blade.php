@@ -1,6 +1,6 @@
 @props(['jobs'])
 
-<section id="experience" class="border-t border-slate-200 bg-slate-50 py-20 dark:border-slate-800 dark:bg-slate-900/50">
+<section id="experience" data-reveal class="border-t border-slate-200 bg-slate-50 py-20 dark:border-slate-800 dark:bg-slate-900/50">
     <div class="mx-auto max-w-5xl px-6">
         <h2 class="text-sm font-semibold tracking-widest text-indigo-600 uppercase dark:text-indigo-400">Szakmai tapasztalat</h2>
 

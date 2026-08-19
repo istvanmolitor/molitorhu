@@ -1,6 +1,6 @@
 @props(['skills'])
 
-<section id="skills" class="border-t border-slate-200 py-20 dark:border-slate-800">
+<section id="skills" data-reveal class="border-t border-slate-200 py-20 dark:border-slate-800">
     <div class="mx-auto max-w-5xl px-6">
         <h2 class="text-sm font-semibold tracking-widest text-indigo-600 uppercase dark:text-indigo-400">Készségek</h2>
 

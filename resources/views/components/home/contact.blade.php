@@ -1,6 +1,6 @@
 @props(['contact'])
 
-<section id="contact" class="border-t border-slate-200 py-20 dark:border-slate-800">
+<section id="contact" data-reveal class="border-t border-slate-200 py-20 dark:border-slate-800">
     <div class="mx-auto max-w-5xl px-6 text-center">
         <h2 class="text-sm font-semibold tracking-widest text-indigo-600 uppercase dark:text-indigo-400">Kapcsolat</h2>
         <p class="mt-4 text-3xl font-bold tracking-tight text-slate-900 dark:text-white">
