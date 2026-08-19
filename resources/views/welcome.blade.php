@@ -66,9 +66,9 @@
                         Senior PHP / Laravel fejlesztő
                     </p>
                     <p class="mt-6 max-w-xl text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-                        8+ év tapasztalat skálázható webalkalmazások és API-k tervezésében,
-                        fejlesztésében Laravel és PHP ökoszisztémában — az adatbázis-tervezéstől
-                        a felhő alapú üzemeltetésig.
+                        20+ év tapasztalat PHP és Laravel alapú backend rendszerek, komplex
+                        üzleti alkalmazások és nagy terhelésű rendszerek fejlesztésében,
+                        kiegészülve modern JavaScript frontend technológiákkal (Vue, React).
                     </p>
 
                     <div class="mt-8 flex flex-wrap items-center gap-4">
@@ -104,14 +104,20 @@
             <div class="mx-auto max-w-5xl px-6">
                 <h2 class="text-sm font-semibold tracking-widest text-indigo-600 uppercase dark:text-indigo-400">Rólam</h2>
                 <p class="mt-4 max-w-3xl text-2xl leading-snug font-semibold text-slate-900 dark:text-white">
-                    Backend-fókuszú full-stack fejlesztő, aki szereti a tiszta architektúrát és a mérhető eredményeket.
+                    PHP/Laravel háttérrel rendelkező fejlesztő, aki az adatvezérelt megoldások felé bővíti a szakmai fókuszát.
                 </p>
                 <p class="mt-6 max-w-3xl text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-                    Karrieremet PHP fejlesztőként kezdtem, és azóta Laravel-alapú vállalati
-                    rendszerek, API-k és integrációk fejlesztésére specializálódtam. Csapatokban
-                    dolgozom szívesen, ahol fontos a kódminőség, a tesztelhetőség és a
-                    hosszú távon fenntartható architektúra. Emellett szeretem megosztani a
-                    tudásomat junior kollégákkal code review-k és mentorálás során.
+                    Több mint 20 év tapasztalattal rendelkezem webfejlesztőként, fő fókuszomban
+                    a PHP és Laravel alapú backend rendszerek állnak. Jelentős tapasztalatom van
+                    komplex üzleti alkalmazások, webshopok, admin felületek és nagy terhelésű
+                    rendszerek fejlesztésében, valamint modern JavaScript frontend technológiák
+                    (Vue, React) használatában.
+                </p>
+                <p class="mt-6 max-w-3xl text-lg leading-relaxed text-slate-600 dark:text-slate-300">
+                    Az elmúlt években egyre komolyabban kezdett érdekelni az adattudomány, ezért
+                    célzott képzéseken vettem részt Python-alapú adatelemzés és gépi tanulás
+                    területén. Célom, hogy szoftverfejlesztői hátteremet adatvezérelt problémák
+                    megoldásában kamatoztassam, és szakmailag ebbe az irányba mozduljak el.
                 </p>
             </div>
         </section>
@@ -124,25 +130,60 @@
                 <div class="mt-10 space-y-10">
                     @foreach ([
                         [
-                            'role' => 'Senior Backend Fejlesztő',
-                            'company' => 'TechNova Kft.',
-                            'period' => '2022 — jelenleg',
-                            'description' => 'Laravel-alapú mikroszolgáltatások és belső API-k tervezése, csapatvezetői mentorálás, CI/CD folyamatok kialakítása.',
-                            'tags' => ['Laravel', 'Docker', 'AWS', 'MySQL'],
+                            'role' => 'Webfejlesztő',
+                            'company' => 'Atlass Soft',
+                            'period' => '2026 — jelenleg',
+                            'description' => 'Webfejlesztői feladatok ellátása PHP és Laravel technológiákkal.',
+                            'tags' => ['PHP', 'Laravel'],
                         ],
                         [
-                            'role' => 'PHP / Laravel Fejlesztő',
-                            'company' => 'WebSolutions Zrt.',
-                            'period' => '2019 — 2022',
-                            'description' => 'E-kereskedelmi és ügyfélkezelő platformok fejlesztése, harmadik féltől származó fizetési és szállítási integrációk implementálása.',
-                            'tags' => ['Laravel', 'Vue.js', 'REST API', 'Redis'],
+                            'role' => 'Webfejlesztő',
+                            'company' => 'Central Médiacsoport Zrt.',
+                            'period' => '2023 — 2026',
+                            'description' => 'Vezető hazai hírportálok és médiaoldalak fejlesztése (nosalty.hu, hazipatika.com, hirstart.hu, startlap.hu, 24.hu, kiderul.hu).',
+                            'tags' => ['PHP', 'Laravel', 'MySQL'],
                         ],
                         [
-                            'role' => 'Junior Webfejlesztő',
-                            'company' => 'Digital Craft Stúdió',
-                            'period' => '2016 — 2019',
-                            'description' => 'Ügyféloldali weboldalak és egyedi CMS-megoldások fejlesztése PHP és MySQL alapokon.',
-                            'tags' => ['PHP', 'MySQL', 'jQuery'],
+                            'role' => 'Backend Fejlesztő',
+                            'company' => 'Jármű Kontroll Magyarország Kft.',
+                            'period' => '2021 — 2023',
+                            'description' => 'Backend rendszerek fejlesztése és karbantartása.',
+                            'tags' => ['PHP', 'Laravel', 'MySQL'],
+                        ],
+                        [
+                            'role' => 'Webfejlesztő',
+                            'company' => 'RIEL Elektronikai Kft.',
+                            'period' => '2017 — 2021',
+                            'description' => 'Webalkalmazások fejlesztése (riel.hu).',
+                            'tags' => ['PHP', 'JavaScript'],
+                        ],
+                        [
+                            'role' => 'Webfejlesztő',
+                            'company' => 'Webtown-Informatika Kft.',
+                            'period' => '2013 — 2017',
+                            'description' => 'Webalkalmazások fejlesztése (webtown.hu).',
+                            'tags' => ['PHP', 'MySQL'],
+                        ],
+                        [
+                            'role' => 'Webfejlesztő',
+                            'company' => 'eOX Kft.',
+                            'period' => '2012 — 2013',
+                            'description' => 'Webalkalmazások fejlesztése (eox.hu).',
+                            'tags' => ['PHP'],
+                        ],
+                        [
+                            'role' => 'Webfejlesztő',
+                            'company' => 'Tandofer Informatikai Kft.',
+                            'period' => '2010 — 2012',
+                            'description' => 'Webalkalmazások fejlesztése (tandofer.hu).',
+                            'tags' => ['PHP'],
+                        ],
+                        [
+                            'role' => 'Webfejlesztő',
+                            'company' => 'Silithus Kft.',
+                            'period' => '2008 — 2010',
+                            'description' => 'Webalkalmazások fejlesztése PHP alapokon.',
+                            'tags' => ['PHP'],
                         ],
                     ] as $job)
                         <div class="relative pl-8 sm:grid sm:grid-cols-[10rem_1fr] sm:gap-8 sm:pl-0">
@@ -175,9 +216,9 @@
 
                 <div class="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-3">
                     @foreach ([
-                        'Backend' => ['PHP', 'Laravel', 'REST API', 'MySQL', 'PostgreSQL', 'Redis'],
-                        'Frontend' => ['Vue.js', 'Tailwind CSS', 'JavaScript', 'Blade'],
-                        'Eszközök & DevOps' => ['Docker', 'Git', 'CI/CD', 'AWS'],
+                        'Backend' => ['PHP', 'Laravel', 'Livewire', 'Filament', 'MySQL', 'MSSQL', 'MongoDB', 'ElasticSearch'],
+                        'Frontend' => ['JavaScript', 'Node.js', 'Vue.js', 'React', 'jQuery', 'CSS3', 'SCSS', 'Bootstrap', 'Tailwind'],
+                        'Eszközök & Adattudomány' => ['Docker', 'Git', 'Jira', 'Linux', 'Python', 'Scikit-learn', 'Pandas', 'Matplotlib', 'Photoshop', 'Adobe XD', 'Figma', 'Serpa'],
                     ] as $category => $items)
                         <div>
                             <h3 class="mb-4 font-semibold text-slate-900 dark:text-white">{{ $category }}</h3>
@@ -199,10 +240,25 @@
             <div class="mx-auto max-w-5xl px-6">
                 <h2 class="text-sm font-semibold tracking-widest text-indigo-600 uppercase dark:text-indigo-400">Tanulmányok</h2>
 
-                <div class="mt-10">
-                    <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Mérnökinformatikus BSc</h3>
-                    <p class="text-sm font-medium text-indigo-600 dark:text-indigo-400">Óbudai Egyetem</p>
-                    <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">2013 — 2016</p>
+                <div class="mt-10 space-y-8">
+                    @foreach ([
+                        [
+                            'degree' => 'Műszaki informatikai szak, Hálózati technológiák szakirány',
+                            'school' => 'Kecskeméti Főiskola Gépipari és Automatizálási Műszaki Főiskolai Kar',
+                            'period' => '2005 — 2009',
+                        ],
+                        [
+                            'degree' => 'Informatikai szak',
+                            'school' => 'Kelenföldi Műszaki Középiskola',
+                            'period' => '2001 — 2005',
+                        ],
+                    ] as $school)
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-900 dark:text-white">{{ $school['degree'] }}</h3>
+                            <p class="text-sm font-medium text-indigo-600 dark:text-indigo-400">{{ $school['school'] }}</p>
+                            <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">{{ $school['period'] }}</p>
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </section>
