@@ -33,7 +33,7 @@
                 {{ $hero['description'] }}
             </p>
 
-            <div class="mt-8 flex flex-wrap items-center gap-4">
+            <div class="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:flex-wrap sm:items-center">
                 <a
                     href="#contact"
                     class="inline-flex items-center gap-2 rounded-full bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-500"
@@ -41,42 +41,44 @@
                     <x-home.social-icon icon="mail" class="h-4 w-4" />
                     Vegyük fel a kapcsolatot
                 </a>
-                <a
-                    href="{{ $social['linkedin'] }}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn"
-                    class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-300 text-slate-700 transition hover:border-indigo-400 hover:text-indigo-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-indigo-500 dark:hover:text-indigo-400"
-                >
-                    <x-home.social-icon icon="linkedin" class="h-4 w-4" />
-                </a>
-                <a
-                    href="{{ $social['facebook'] }}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Facebook"
-                    class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-300 text-slate-700 transition hover:border-indigo-400 hover:text-indigo-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-indigo-500 dark:hover:text-indigo-400"
-                >
-                    <x-home.social-icon icon="facebook" class="h-4 w-4" />
-                </a>
-                <a
-                    href="{{ $social['instagram'] }}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Instagram"
-                    class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-300 text-slate-700 transition hover:border-indigo-400 hover:text-indigo-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-indigo-500 dark:hover:text-indigo-400"
-                >
-                    <x-home.social-icon icon="instagram" class="h-4 w-4" />
-                </a>
-                <a
-                    href="{{ $social['github'] }}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub"
-                    class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-300 text-slate-700 transition hover:border-indigo-400 hover:text-indigo-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-indigo-500 dark:hover:text-indigo-400"
-                >
-                    <x-home.social-icon icon="github" class="h-4 w-4" />
-                </a>
+                <div class="flex flex-wrap items-center gap-4">
+                    <a
+                        href="{{ $social['linkedin'] }}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                        class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-300 text-slate-700 transition hover:border-indigo-400 hover:text-indigo-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-indigo-500 dark:hover:text-indigo-400"
+                    >
+                        <x-home.social-icon icon="linkedin" class="h-4 w-4" />
+                    </a>
+                    <a
+                        href="{{ $social['facebook'] }}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook"
+                        class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-300 text-slate-700 transition hover:border-indigo-400 hover:text-indigo-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-indigo-500 dark:hover:text-indigo-400"
+                    >
+                        <x-home.social-icon icon="facebook" class="h-4 w-4" />
+                    </a>
+                    <a
+                        href="{{ $social['instagram'] }}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram"
+                        class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-300 text-slate-700 transition hover:border-indigo-400 hover:text-indigo-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-indigo-500 dark:hover:text-indigo-400"
+                    >
+                        <x-home.social-icon icon="instagram" class="h-4 w-4" />
+                    </a>
+                    <a
+                        href="{{ $social['github'] }}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub"
+                        class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-300 text-slate-700 transition hover:border-indigo-400 hover:text-indigo-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-indigo-500 dark:hover:text-indigo-400"
+                    >
+                        <x-home.social-icon icon="github" class="h-4 w-4" />
+                    </a>
+                </div>
             </div>
 
             <div class="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-slate-500 dark:text-slate-400">
