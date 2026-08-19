@@ -1,0 +1,51 @@
+<?php
+
+namespace App\Filament\Resources\Educations\Tables;
+
+use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteBulkAction;
+use Filament\Actions\EditAction;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
+
+class EducationTable
+{
+    public static function configure(Table $table): Table
+    {
+        return $table
+            ->columns([
+                TextColumn::make('degree')
+                    ->searchable(),
+                TextColumn::make('school')
+                    ->searchable(),
+                TextColumn::make('started_year')
+                    ->label('Tól')
+                    ->sortable(),
+                TextColumn::make('ended_year')
+                    ->label('Ig')
+                    ->sortable()
+                    ->placeholder('folyamatban'),
+                TextColumn::make('created_at')
+                    ->dateTime()
+                    ->sortable()
+                    ->toggleable(isToggledHiddenByDefault: true),
+                TextColumn::make('updated_at')
+                    ->dateTime()
+                    ->sortable()
+                    ->toggleable(isToggledHiddenByDefault: true),
+            ])
+            ->defaultSort('sort_order')
+            ->reorderable('sort_order')
+            ->filters([
+                //
+            ])
+            ->recordActions([
+                EditAction::make(),
+            ])
+            ->toolbarActions([
+                BulkActionGroup::make([
+                    DeleteBulkAction::make(),
+                ]),
+            ]);
+    }
+}

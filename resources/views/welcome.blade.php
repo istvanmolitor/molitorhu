@@ -19,11 +19,11 @@
 
         <x-home.about :about="config('portfolio.about')" />
 
-        <x-home.experience :jobs="config('portfolio.experience')" />
+        <x-home.experience :jobs="$jobs" />
 
-        <x-home.skills :skills="config('portfolio.skills')" />
+        <x-home.skills :skills="$skills" />
 
-        <x-home.education :schools="config('portfolio.education')" />
+        <x-home.education :schools="$schools" />
 
         <x-home.contact :contact="config('portfolio.contact')" />
 
