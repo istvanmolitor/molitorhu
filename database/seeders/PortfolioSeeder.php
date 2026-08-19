@@ -50,7 +50,7 @@ class PortfolioSeeder extends Seeder
     private const EXPERIENCES = [
         [
             'role' => 'Backend Fejlesztő',
-            'company' => 'Atlass Soft',
+            'company' => 'Atlas Soft Kft.',
             'started_year' => 2026,
             'ended_year' => null,
             'description' => 'Webfejlesztői feladatok ellátása PHP és Laravel technológiákkal.',
