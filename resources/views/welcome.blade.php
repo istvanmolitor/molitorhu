@@ -243,6 +243,11 @@
                 <div class="mt-10 space-y-8">
                     @foreach ([
                         [
+                            'degree' => 'Adattudomány szak',
+                            'school' => 'Óbudai Egyetem',
+                            'period' => '2026 —',
+                        ],
+                        [
                             'degree' => 'Műszaki informatikai szak, Hálózati technológiák szakirány',
                             'school' => 'Kecskeméti Főiskola Gépipari és Automatizálási Műszaki Főiskolai Kar',
                             'period' => '2005 — 2009',
