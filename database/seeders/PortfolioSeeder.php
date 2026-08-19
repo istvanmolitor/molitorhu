@@ -17,7 +17,9 @@ class PortfolioSeeder extends Seeder
     private const SKILLS = [
         'Backend' => ['PHP', 'Laravel', 'Livewire', 'Filament', 'MySQL', 'MSSQL', 'MongoDB', 'ElasticSearch'],
         'Frontend' => ['JavaScript', 'Node.js', 'Vue.js', 'React', 'jQuery', 'CSS3', 'SCSS', 'Bootstrap', 'Tailwind'],
-        'Eszközök & Adattudomány' => ['Docker', 'Git', 'Jira', 'Linux', 'Python', 'Scikit-learn', 'Pandas', 'Matplotlib', 'Photoshop', 'Adobe XD', 'Figma', 'Serpa'],
+        'Eszközök' => ['Docker', 'Git', 'Jira', 'Linux', 'Photoshop', 'Adobe XD', 'Figma', 'Serpa', 'Postman', 'Vite', 'Composer'],
+        'Adattudomány' => ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'Jupyter', 'Google Colab', 'SQL'],
+        'AI' => ['ChatGPT', 'Claude', 'Claude Code', 'GitHub Copilot', 'Junie', 'Hugging Face'],
     ];
 
     /**
