@@ -15,7 +15,7 @@
 
         <x-home.header :nav="config('portfolio.nav')" />
 
-        <x-home.hero :hero="config('portfolio.hero')" />
+        <x-home.hero :hero="config('portfolio.hero')" :social="config('portfolio.social')" />
 
         <x-home.about :about="config('portfolio.about')" />
 
@@ -27,6 +27,6 @@
 
         <x-home.contact :contact="config('portfolio.contact')" />
 
-        <x-home.footer />
+        <x-home.footer :social="config('portfolio.social')" />
     </body>
 </html>
