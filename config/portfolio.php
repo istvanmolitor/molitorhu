@@ -23,7 +23,6 @@ return [
     ],
 
     'hero' => [
-        'availability' => 'Elérhető új lehetőségekre',
         'name' => 'Molitor István',
         'title' => 'Senior PHP / Laravel fejlesztő',
         'description' => '20+ év tapasztalat PHP és Laravel alapú backend rendszerek, komplex '
@@ -51,7 +50,7 @@ return [
 
     'contact' => [
         'heading' => 'Dolgozzunk együtt.',
-        'description' => 'Nyitott vagyok új szakmai lehetőségekre és érdekes projektekre — írj bátran.',
+        'description' => 'Van egy webes ötleted, amit megvalósítanál? Írj bátran.',
         'email' => 'istvanmolitor@gmail.com',
     ],
 
