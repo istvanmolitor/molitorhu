@@ -19,10 +19,13 @@ class ExperienceFactory extends Factory
     {
         return [
             'role' => fake()->jobTitle(),
+            'role_en' => fake()->jobTitle(),
             'company' => fake()->company(),
+            'company_en' => fake()->company(),
             'started_year' => fake()->year(),
             'ended_year' => fake()->year(),
             'description' => fake()->sentence(),
+            'description_en' => fake()->sentence(),
             'sort_order' => 0,
         ];
     }

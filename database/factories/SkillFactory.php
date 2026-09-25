@@ -21,6 +21,7 @@ class SkillFactory extends Factory
         return [
             'skill_category_id' => SkillCategory::factory(),
             'name' => fake()->word(),
+            'name_en' => fake()->word(),
             'sort_order' => 0,
         ];
     }

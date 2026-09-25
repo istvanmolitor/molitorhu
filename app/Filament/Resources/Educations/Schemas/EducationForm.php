@@ -12,9 +12,15 @@ class EducationForm
         return $schema
             ->components([
                 TextInput::make('degree')
+                    ->label('Végzettség (HU)')
                     ->required(),
+                TextInput::make('degree_en')
+                    ->label('Végzettség (EN)'),
                 TextInput::make('school')
+                    ->label('Intézmény (HU)')
                     ->required(),
+                TextInput::make('school_en')
+                    ->label('Intézmény (EN)'),
                 TextInput::make('started_year')
                     ->label('Tól')
                     ->numeric()

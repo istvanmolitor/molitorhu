@@ -16,7 +16,11 @@ class PageTextForm
                     ->required()
                     ->unique(ignoreRecord: true),
                 Textarea::make('value')
+                    ->label('Érték (HU)')
                     ->required()
+                    ->columnSpanFull(),
+                Textarea::make('value_en')
+                    ->label('Érték (EN)')
                     ->columnSpanFull(),
             ]);
     }

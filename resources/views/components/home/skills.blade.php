@@ -2,7 +2,7 @@
 
 <section id="skills" data-reveal class="border-t border-slate-200 py-20 dark:border-slate-800">
     <div class="mx-auto max-w-5xl px-6">
-        <h2 class="text-sm font-semibold tracking-widest text-indigo-600 uppercase dark:text-indigo-400">Készségek</h2>
+        <h2 class="text-sm font-semibold tracking-widest text-indigo-600 uppercase dark:text-indigo-400">{{ __('portfolio.sections.skills') }}</h2>
 
         <div class="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-3">
             @foreach ($skills as $category => $items)

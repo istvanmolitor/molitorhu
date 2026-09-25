@@ -41,7 +41,7 @@
             </a>
         </div>
         <p class="text-sm text-slate-500 dark:text-slate-400">
-            &copy; {{ now()->year }} Molitor István. Minden jog fenntartva.
+            &copy; {{ now()->year }} Molitor István. {{ __('portfolio.footer.rights') }}
         </p>
     </div>
 </footer>

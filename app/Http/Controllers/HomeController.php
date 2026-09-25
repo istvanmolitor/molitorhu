@@ -21,11 +21,11 @@ class HomeController extends Controller
             ->orderBy('sort_order')
             ->get()
             ->map(fn (Experience $experience): array => [
-                'role' => $experience->role,
-                'company' => $experience->company,
+                'role' => $experience->localized('role'),
+                'company' => $experience->localized('company'),
                 'period' => $experience->period,
-                'description' => $experience->description,
-                'tags' => $experience->skills->pluck('name')->all(),
+                'description' => $experience->localized('description'),
+                'tags' => $experience->skills->map(fn ($skill): string => $skill->localized('name'))->all(),
             ])
             ->all();
 
@@ -33,15 +33,15 @@ class HomeController extends Controller
             ->orderBy('sort_order')
             ->get()
             ->mapWithKeys(fn (SkillCategory $category): array => [
-                $category->name => $category->skills->pluck('name')->all(),
+                $category->localized('name') => $category->skills->map(fn ($skill): string => $skill->localized('name'))->all(),
             ])
             ->all();
 
         $schools = Education::orderBy('sort_order')
             ->get()
             ->map(fn (Education $education): array => [
-                'degree' => $education->degree,
-                'school' => $education->school,
+                'degree' => $education->localized('degree'),
+                'school' => $education->localized('school'),
                 'period' => $education->period,
             ])
             ->all();

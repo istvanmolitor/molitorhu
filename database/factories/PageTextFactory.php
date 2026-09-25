@@ -20,6 +20,7 @@ class PageTextFactory extends Factory
         return [
             'key' => fake()->unique()->slug(2, false),
             'value' => fake()->sentence(),
+            'value_en' => fake()->sentence(),
         ];
     }
 }

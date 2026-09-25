@@ -12,7 +12,10 @@ class SkillCategoryForm
         return $schema
             ->components([
                 TextInput::make('name')
+                    ->label('Név (HU)')
                     ->required(),
+                TextInput::make('name_en')
+                    ->label('Név (EN)'),
             ]);
     }
 }

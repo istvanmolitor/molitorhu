@@ -8,6 +8,8 @@ class PageTextRepository
 {
     public function get(string $key, ?string $default = null): ?string
     {
-        return PageText::query()->where('key', $key)->value('value') ?? $default;
+        $pageText = PageText::query()->where('key', $key)->first();
+
+        return $pageText?->localized('value') ?? $default;
     }
 }

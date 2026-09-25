@@ -36,7 +36,7 @@
                     class="inline-flex items-center gap-2 rounded-full bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-500"
                 >
                     <x-home.social-icon icon="mail" class="h-4 w-4" />
-                    Vegyük fel a kapcsolatot
+                    {{ __('portfolio.hero.contact_cta') }}
                 </a>
                 <div class="flex flex-wrap items-center gap-4">
                     <a

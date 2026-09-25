@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('skill_category_id')->constrained()->cascadeOnDelete();
             $table->string('name');
+            $table->string('name_en')->nullable();
             $table->integer('sort_order')->default(0)->index();
             $table->timestamps();
         });

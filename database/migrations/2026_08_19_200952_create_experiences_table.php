@@ -14,10 +14,13 @@ return new class extends Migration
         Schema::create('experiences', function (Blueprint $table) {
             $table->id();
             $table->string('role');
+            $table->string('role_en')->nullable();
             $table->string('company');
+            $table->string('company_en')->nullable();
             $table->unsignedSmallInteger('started_year');
             $table->unsignedSmallInteger('ended_year')->nullable();
             $table->text('description');
+            $table->text('description_en')->nullable();
             $table->integer('sort_order')->default(0)->index();
             $table->timestamps();
         });

@@ -19,7 +19,9 @@ class EducationFactory extends Factory
     {
         return [
             'degree' => fake()->words(3, true),
+            'degree_en' => fake()->words(3, true),
             'school' => fake()->company(),
+            'school_en' => fake()->company(),
             'started_year' => fake()->year(),
             'ended_year' => fake()->year(),
             'sort_order' => 0,

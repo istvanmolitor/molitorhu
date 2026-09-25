@@ -14,7 +14,9 @@ return new class extends Migration
         Schema::create('educations', function (Blueprint $table) {
             $table->id();
             $table->string('degree');
+            $table->string('degree_en')->nullable();
             $table->string('school');
+            $table->string('school_en')->nullable();
             $table->unsignedSmallInteger('started_year');
             $table->unsignedSmallInteger('ended_year')->nullable();
             $table->integer('sort_order')->default(0)->index();

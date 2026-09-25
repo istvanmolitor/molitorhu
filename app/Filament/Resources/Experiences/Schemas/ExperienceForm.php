@@ -14,9 +14,15 @@ class ExperienceForm
         return $schema
             ->components([
                 TextInput::make('role')
+                    ->label('Pozíció (HU)')
                     ->required(),
+                TextInput::make('role_en')
+                    ->label('Pozíció (EN)'),
                 TextInput::make('company')
+                    ->label('Cég (HU)')
                     ->required(),
+                TextInput::make('company_en')
+                    ->label('Cég (EN)'),
                 TextInput::make('started_year')
                     ->label('Tól')
                     ->numeric()
@@ -26,7 +32,11 @@ class ExperienceForm
                     ->numeric()
                     ->helperText('Üresen hagyva: jelenleg.'),
                 Textarea::make('description')
+                    ->label('Leírás (HU)')
                     ->required()
+                    ->columnSpanFull(),
+                Textarea::make('description_en')
+                    ->label('Leírás (EN)')
                     ->columnSpanFull(),
                 Select::make('skills')
                     ->relationship('skills', 'name')

@@ -3,11 +3,11 @@
 return [
 
     'nav' => [
-        ['label' => 'Rólam', 'href' => '#about'],
-        ['label' => 'Tapasztalat', 'href' => '#experience'],
-        ['label' => 'Készségek', 'href' => '#skills'],
-        ['label' => 'Tanulmányok', 'href' => '#education'],
-        ['label' => 'Kapcsolat', 'href' => '#contact'],
+        ['key' => 'about', 'href' => '#about'],
+        ['key' => 'experience', 'href' => '#experience'],
+        ['key' => 'skills', 'href' => '#skills'],
+        ['key' => 'education', 'href' => '#education'],
+        ['key' => 'contact', 'href' => '#contact'],
     ],
 
     'social' => [
