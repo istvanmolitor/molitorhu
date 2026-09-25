@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Education;
 use App\Models\Experience;
+use App\Models\PageText;
 use App\Models\Skill;
 use App\Models\SkillCategory;
 use Illuminate\Database\Seeder;
@@ -11,6 +12,37 @@ use Illuminate\Support\Str;
 
 class PortfolioSeeder extends Seeder
 {
+    /**
+     * @var array<string, string>
+     */
+    private const PAGE_TEXTS = [
+        'meta_title' => 'Molitor István — Senior PHP / Laravel fejlesztő',
+        'meta_description' => 'Molitor István szakmai portfóliója: Senior PHP / Laravel fejlesztő, backend architektúra és API fejlesztés.',
+
+        'hero_name' => 'Molitor István',
+        'hero_title' => 'Senior PHP / Laravel fejlesztő',
+        'hero_description' => '20+ év tapasztalat PHP és Laravel alapú backend rendszerek, komplex '
+            .'üzleti alkalmazások és nagy terhelésű rendszerek fejlesztésében, '
+            .'kiegészülve modern JavaScript frontend technológiákkal (Vue, React).',
+        'hero_location' => 'Budapest, Magyarország',
+        'hero_email' => 'istvanmolitor@gmail.com',
+
+        'about_heading' => 'PHP/Laravel háttérrel rendelkező fejlesztő, aki az adatvezérelt megoldások felé bővíti a szakmai fókuszát.',
+        'about_paragraph_1' => 'Több mint 20 év tapasztalattal rendelkezem webfejlesztőként, fő fókuszomban '
+            .'a PHP és Laravel alapú backend rendszerek állnak. Jelentős tapasztalatom van '
+            .'komplex üzleti alkalmazások, webshopok, admin felületek és nagy terhelésű '
+            .'rendszerek fejlesztésében, valamint modern JavaScript frontend technológiák '
+            .'(Vue, React) használatában.',
+        'about_paragraph_2' => 'Az elmúlt években egyre komolyabban kezdett érdekelni az adattudomány, ezért '
+            .'célzott képzéseken vettem részt Python-alapú adatelemzés és gépi tanulás '
+            .'területén. Célom, hogy szoftverfejlesztői hátteremet adatvezérelt problémák '
+            .'megoldásában kamatoztassam, és szakmailag ebbe az irányba mozduljak el.',
+
+        'contact_heading' => 'Dolgozzunk együtt.',
+        'contact_description' => 'Van egy webes ötleted, amit megvalósítanál? Írj bátran.',
+        'contact_email' => 'istvanmolitor@gmail.com',
+    ];
+
     /**
      * @var array<string, list<string>>
      */
@@ -117,14 +149,26 @@ class PortfolioSeeder extends Seeder
     ];
 
     /**
-     * Seed skill categories, skills, educations and experiences with the
-     * data that used to live in config/portfolio.php.
+     * Seed page texts, skill categories, skills, educations and experiences
+     * with the data that used to live in config/portfolio.php.
      */
     public function run(): void
     {
+        $this->seedPageTexts();
+
         $skills = $this->seedSkills();
         $this->seedEducations();
         $this->seedExperiences($skills);
+    }
+
+    private function seedPageTexts(): void
+    {
+        foreach (self::PAGE_TEXTS as $key => $value) {
+            PageText::create([
+                'key' => $key,
+                'value' => $value,
+            ]);
+        }
     }
 
     /**

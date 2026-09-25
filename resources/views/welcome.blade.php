@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{ config('portfolio.meta.title') }}</title>
-        <meta name="description" content="{{ config('portfolio.meta.description') }}">
+        <title>{{ $meta['title'] }}</title>
+        <meta name="description" content="{{ $meta['description'] }}">
 
         @fonts
 
@@ -15,9 +15,9 @@
 
         <x-home.header :nav="config('portfolio.nav')" />
 
-        <x-home.hero :hero="config('portfolio.hero')" :social="config('portfolio.social')" />
+        <x-home.hero :hero="$hero" :social="config('portfolio.social')" />
 
-        <x-home.about :about="config('portfolio.about')" />
+        <x-home.about :about="$about" />
 
         <x-home.experience :jobs="$jobs" />
 
@@ -25,7 +25,7 @@
 
         <x-home.education :schools="$schools" />
 
-        <x-home.contact :contact="config('portfolio.contact')" />
+        <x-home.contact :contact="$contact" />
 
         <x-home.footer :social="config('portfolio.social')" />
     </body>
