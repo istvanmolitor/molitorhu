@@ -20,23 +20,24 @@ class PortfolioSeeder extends Seeder
         'meta_description' => 'Molitor István szakmai portfóliója: Senior PHP / Laravel fejlesztő, backend architektúra és API fejlesztés.',
 
         'hero_name' => 'Molitor István',
-        'hero_title' => 'Senior PHP / Laravel fejlesztő',
-        'hero_description' => '20+ év tapasztalat PHP és Laravel alapú backend rendszerek, komplex '
-            .'üzleti alkalmazások és nagy terhelésű rendszerek fejlesztésében, '
-            .'kiegészülve modern JavaScript frontend technológiákkal (Vue, React).',
+        'hero_title' => 'Senior szoftverfejlesztő',
+        'hero_description' => '20+ év szakmai tapasztalat nagy terhelésű webes platformok, '
+            .'mikroszolgáltatás-alapú architektúrák és komplex, adatalapú üzleti '
+            .'rendszervezérlések tervezésében és fejlesztésében.',
         'hero_location' => 'Budapest, Magyarország',
         'hero_email' => 'istvanmolitor@gmail.com',
 
-        'about_heading' => 'PHP/Laravel háttérrel rendelkező fejlesztő, aki az adatvezérelt megoldások felé bővíti a szakmai fókuszát.',
-        'about_paragraph_1' => 'Több mint 20 év tapasztalattal rendelkezem webfejlesztőként, fő fókuszomban '
-            .'a PHP és Laravel alapú backend rendszerek állnak. Jelentős tapasztalatom van '
-            .'komplex üzleti alkalmazások, webshopok, admin felületek és nagy terhelésű '
-            .'rendszerek fejlesztésében, valamint modern JavaScript frontend technológiák '
-            .'(Vue, React) használatában.',
-        'about_paragraph_2' => 'Az elmúlt években egyre komolyabban kezdett érdekelni az adattudomány, ezért '
-            .'célzott képzéseken vettem részt Python-alapú adatelemzés és gépi tanulás '
-            .'területén. Célom, hogy szoftverfejlesztői hátteremet adatvezérelt problémák '
-            .'megoldásában kamatoztassam, és szakmailag ebbe az irányba mozduljak el.',
+        'about_heading' => 'Több mint 20 éves szoftverfejlesztői háttérrel rendelkező szakember, aki az adatalapú, AI-integrált rendszerek felé bővíti szakmai fókuszát.',
+        'about_paragraph_1' => 'Senior szoftverfejlesztőként több mint 20 év szakmai tapasztalattal '
+            .'rendelkezem. Szakterületem a nagy terhelésű webes platformok, '
+            .'mikroszolgáltatás-alapú architektúrák és komplex, adatalapú üzleti '
+            .'rendszervezérlések tervezése és fejlesztése, PHP és Laravel alapokon, modern '
+            .'JavaScript frontend technológiákkal (Vue, React) kiegészülve.',
+        'about_paragraph_2' => 'Az elmúlt években egyre komolyabban kezdett érdekelni az adattudomány: '
+            .'elvégeztem a Cubix Machine Learning Engineer tanfolyamát, jelenleg pedig az Óbudai '
+            .'Egyetem Adattudomány MSc levelező szakán tanulok. Célom, hogy sokéves backend '
+            .'fejlesztői tapasztalatomat modern, adatalapú, AI-integrált webes rendszerek '
+            .'építésében kamatoztassam.',
 
         'contact_heading' => 'Dolgozzunk együtt.',
         'contact_description' => 'Van egy webes ötleted, amit megvalósítanál? Írj bátran.',
@@ -47,10 +48,10 @@ class PortfolioSeeder extends Seeder
      * @var array<string, list<string>>
      */
     private const SKILLS = [
-        'Backend' => ['PHP', 'Laravel', 'Livewire', 'Filament', 'MySQL', 'MSSQL', 'MongoDB', 'ElasticSearch'],
+        'Backend' => ['PHP', 'Laravel', 'Livewire', 'Filament', 'MySQL', 'MSSQL', 'MongoDB', 'ElasticSearch', 'Redis'],
         'Frontend' => ['JavaScript', 'Node.js', 'Vue.js', 'React', 'jQuery', 'CSS3', 'SCSS', 'Bootstrap', 'Tailwind'],
         'Eszközök' => ['Docker', 'Git', 'Jira', 'Linux', 'Photoshop', 'Adobe XD', 'Figma', 'Serpa', 'Postman', 'Vite', 'Composer'],
-        'Adattudomány' => ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'Jupyter', 'Google Colab', 'SQL'],
+        'Adattudomány' => ['Python', 'Django', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'Jupyter', 'Google Colab', 'SQL'],
         'AI' => ['ChatGPT', 'Claude', 'Claude Code', 'GitHub Copilot', 'Junie', 'Lovable', 'Hugging Face'],
     ];
 
@@ -59,10 +60,16 @@ class PortfolioSeeder extends Seeder
      */
     private const EDUCATIONS = [
         [
-            'degree' => 'Adattudomány szak',
-            'school' => 'Óbudai Egyetem',
+            'degree' => 'Adattudomány MSc (levelező)',
+            'school' => 'Óbudai Egyetem Neumann János Informatikai Kar',
             'started_year' => 2026,
             'ended_year' => null,
+        ],
+        [
+            'degree' => 'Machine Learning Engineer tanfolyam',
+            'school' => 'Cubix',
+            'started_year' => 2023,
+            'ended_year' => 2023,
         ],
         [
             'degree' => 'Műszaki informatikai szak, Hálózati technológiák szakirány',
@@ -83,67 +90,51 @@ class PortfolioSeeder extends Seeder
      */
     private const EXPERIENCES = [
         [
-            'role' => 'Backend Fejlesztő',
-            'company' => 'Atlas Soft Kft.',
-            'started_year' => 2026,
-            'ended_year' => null,
-            'description' => 'Webfejlesztői feladatok ellátása PHP és Laravel technológiákkal.',
-            'tags' => ['PHP', 'Symfony', 'PostgreSQL', 'Docker'],
-        ],
-        [
-            'role' => 'Webfejlesztő',
+            'role' => 'Full Stack Fejlesztő',
             'company' => 'Central Médiacsoport Zrt.',
             'started_year' => 2023,
             'ended_year' => 2026,
-            'description' => 'Vezető hazai hírportálok és médiaoldalak fejlesztése (nosalty.hu, hazipatika.com, hirstart.hu, startlap.hu, 24.hu, kiderul.hu).',
+            'description' => 'Nagy látogatottságú weboldalak fejlesztése (nosalty.hu, hazipatika.com, hirstart.hu, startlap.hu, 24.hu, kiderul.hu).',
             'tags' => ['PHP', 'Laravel', 'Nette', 'MySQL', 'Docker', 'React'],
         ],
         [
-            'role' => 'Fullstack fejlesztő',
+            'role' => 'Backend Fejlesztő',
             'company' => 'Jármű Kontroll Magyarország Kft.',
             'started_year' => 2021,
             'ended_year' => 2023,
-            'description' => 'Backend rendszerek fejlesztése és karbantartása.',
+            'description' => 'Ügyfelek számára készült flottakövető adminisztrációs felület fejlesztése.',
             'tags' => ['PHP', 'Laravel', 'MySQL', 'Docker', 'Vue.js'],
         ],
         [
-            'role' => 'Webfejlesztő',
+            'role' => 'Full Stack Fejlesztő',
             'company' => 'RIEL Elektronikai Kft.',
             'started_year' => 2017,
             'ended_year' => 2021,
-            'description' => 'Webalkalmazások fejlesztése (riel.hu).',
+            'description' => 'Webshop, belső ügyviteli rendszer és VIR adatszinkron fejlesztése (riel.hu).',
             'tags' => ['PHP', 'Laravel', 'Vue.js'],
         ],
         [
-            'role' => 'Webfejlesztő',
+            'role' => 'Full Stack Fejlesztő',
             'company' => 'Webtown-Informatika Kft.',
             'started_year' => 2013,
             'ended_year' => 2017,
-            'description' => 'Webalkalmazások fejlesztése (webtown.hu).',
+            'description' => 'Weboldalak, VIR rendszer fejlesztése (webtown.hu).',
             'tags' => ['PHP', 'MySQL', 'JQuery'],
         ],
         [
-            'role' => 'Webfejlesztő',
-            'company' => 'eOX Kft.',
-            'started_year' => 2012,
-            'ended_year' => 2013,
-            'description' => 'Webalkalmazások fejlesztése (eox.hu).',
-            'tags' => ['PHP', 'JavaScript'],
-        ],
-        [
-            'role' => 'Webfejlesztő',
+            'role' => 'Full Stack Fejlesztő',
             'company' => 'Tandofer Informatikai Kft.',
             'started_year' => 2010,
-            'ended_year' => 2012,
-            'description' => 'Webalkalmazások fejlesztése (tandofer.hu).',
+            'ended_year' => 2013,
+            'description' => 'VIR-rendszerekhez integrált webshopok fejlesztése (tandofer.hu).',
             'tags' => ['PHP', 'JavaScript'],
         ],
         [
-            'role' => 'Webfejlesztő',
+            'role' => 'Backend Fejlesztő',
             'company' => 'Silithus Kft.',
             'started_year' => 2008,
             'ended_year' => 2010,
-            'description' => 'Webalkalmazások fejlesztése PHP alapokon.',
+            'description' => 'Közbeszerzési rendszer fejlesztése a Bács-Kiskun Megyei Önkormányzat számára.',
             'tags' => ['PHP', 'JavaScript'],
         ],
     ];
