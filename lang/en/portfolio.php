@@ -26,6 +26,7 @@ return [
 
     'hero' => [
         'contact_cta' => 'Get in touch',
+        'cv_download' => 'Download CV',
     ],
 
     'experience' => [

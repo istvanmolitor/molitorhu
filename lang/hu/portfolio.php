@@ -26,6 +26,7 @@ return [
 
     'hero' => [
         'contact_cta' => 'Vegyük fel a kapcsolatot',
+        'cv_download' => 'Önéletrajz letöltése',
     ],
 
     'experience' => [

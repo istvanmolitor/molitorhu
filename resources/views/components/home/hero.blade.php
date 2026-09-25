@@ -17,6 +17,14 @@
                     height="384"
                 >
             </div>
+
+            <a
+                href="{{ app()->getLocale() === 'en' ? route('cv.en') : route('cv') }}"
+                class="mt-6 flex items-center justify-center gap-2 rounded-full border border-slate-300 px-6 py-3 text-sm font-medium text-slate-700 transition hover:border-indigo-400 hover:text-indigo-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-indigo-500 dark:hover:text-indigo-400"
+            >
+                <x-home.social-icon icon="download" class="h-4 w-4" />
+                {{ __('portfolio.hero.cv_download') }}
+            </a>
         </div>
 
         <div>

@@ -17,9 +17,11 @@
         <div class="flex items-center gap-3">
             <a
                 href="{{ app()->getLocale() === 'en' ? route('home') : route('home.en') }}"
-                class="text-sm font-medium text-slate-600 transition hover:text-indigo-600 dark:text-slate-300 dark:hover:text-indigo-400"
+                class="inline-flex h-9 w-9 items-center justify-center rounded-full text-lg leading-none transition hover:bg-slate-100 dark:hover:bg-slate-800"
+                aria-label="{{ __('portfolio.header.language_switch') }}"
+                title="{{ __('portfolio.header.language_switch') }}"
             >
-                {{ __('portfolio.header.language_switch') }}
+                {{ app()->getLocale() === 'en' ? '🇭🇺' : '🇬🇧' }}
             </a>
 
             <a
