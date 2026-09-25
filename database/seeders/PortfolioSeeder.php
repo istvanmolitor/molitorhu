@@ -27,20 +27,12 @@ class PortfolioSeeder extends Seeder
         'hero_location' => 'Budapest, Magyarország',
         'hero_email' => 'istvanmolitor@gmail.com',
 
-        'about_heading' => 'Több mint 20 éves szoftverfejlesztői háttérrel rendelkező szakember, aki az adatalapú, AI-integrált rendszerek felé bővíti szakmai fókuszát.',
-        'about_paragraph_1' => 'Senior szoftverfejlesztőként több mint 20 év szakmai tapasztalattal '
-            .'rendelkezem. Szakterületem a nagy terhelésű webes platformok, '
-            .'mikroszolgáltatás-alapú architektúrák és komplex, adatalapú üzleti '
-            .'rendszervezérlések tervezése és fejlesztése, PHP és Laravel alapokon, modern '
-            .'JavaScript frontend technológiákkal (Vue, React) kiegészülve.',
-        'about_paragraph_2' => 'Az elmúlt években egyre komolyabban kezdett érdekelni az adattudomány: '
-            .'elvégeztem a Cubix Machine Learning Engineer tanfolyamát, jelenleg pedig az Óbudai '
-            .'Egyetem Adattudomány MSc levelező szakán tanulok. Célom, hogy sokéves backend '
-            .'fejlesztői tapasztalatomat modern, adatalapú, AI-integrált webes rendszerek '
-            .'építésében kamatoztassam.',
+        'about_heading' => 'Két évtized tapasztalattal rendelkező szakember vagyok.',
+        'about_paragraph_1' => 'Szakterületem a nagy terhelésű webes platformok, mikroszolgáltatás-alapú architektúrák és komplex, adatalapú üzleti rendszervezérlések tervezése és fejlesztése.',
+        'about_paragraph_2' => 'Jelenleg az Óbudai Egyetem Adattudomány MSc levelező szakán tanulok. Célom, hogy sokéves backend fejlesztői tapasztalatomat modern, adatalapú, AI-integrált webes rendszerek építésében használjam fel.',
 
         'contact_heading' => 'Dolgozzunk együtt.',
-        'contact_description' => 'Van egy webes ötleted, amit megvalósítanál? Írj bátran.',
+        'contact_description' => 'Szakemberre van szükségetek? Írj bátran!',
         'contact_email' => 'istvanmolitor@gmail.com',
     ];
 
@@ -59,20 +51,16 @@ class PortfolioSeeder extends Seeder
         'hero_location' => 'Budapest, Hungary',
         'hero_email' => 'istvanmolitor@gmail.com',
 
-        'about_heading' => 'A professional with more than 20 years of software development background, now expanding his focus toward data-driven, AI-integrated systems.',
-        'about_paragraph_1' => 'As a senior software developer, I have more than 20 years of '
-            .'professional experience. My expertise lies in designing and building high-traffic '
-            .'web platforms, microservice-based architectures, and complex, data-driven business '
-            .'systems, built on PHP and Laravel and complemented with modern JavaScript frontend '
-            .'technologies (Vue, React).',
-        'about_paragraph_2' => 'In recent years I have become increasingly interested in data '
-            .'science: I completed the Cubix Machine Learning Engineer course, and I am currently '
-            .'studying in the Data Science MSc part-time program at Óbuda University. My goal is '
-            .'to leverage my years of backend development experience in building modern, '
-            .'data-driven, AI-integrated web systems.',
+        'about_heading' => 'I am a professional with two decades of experience.',
+        'about_paragraph_1' => 'My specialty is designing and developing high-traffic web '
+            .'platforms, microservice-based architectures, and complex, data-driven business '
+            .'systems.',
+        'about_paragraph_2' => 'I am currently studying in the part-time Data Science MSc '
+            .'program at Óbuda University. My goal is to leverage my many years of backend '
+            .'development experience in building modern, data-driven, AI-integrated web systems.',
 
         'contact_heading' => "Let's work together.",
-        'contact_description' => 'Have a web project idea you would like to bring to life? Feel free to reach out.',
+        'contact_description' => 'Need a professional? Feel free to reach out.',
         'contact_email' => 'istvanmolitor@gmail.com',
     ];
 
